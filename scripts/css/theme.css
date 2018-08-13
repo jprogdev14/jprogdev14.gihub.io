@@ -1,125 +1,315 @@
-html, body, div,
-span, h1, h2, h3,
-p, ul, li {
+html, body, div, span,
+h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-body {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-}
-
 header {
-    width: 100%;
-}
-
-header nav {
     position: fixed;
     width: 100%;
     z-index: 10;
 }
 
+header nav {
+    width: 100%;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#wrapper #cover {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper #cover div a:nth-of-type(1) {
+    color: #0000ff;
+}
+
+#wrapper #cover div a:nth-of-type(2) {
+    color: #7c7c7c;
+}
+
+#wrapper #cover div a:nth-of-type(3) {
+    color: #009700;
+}
+
+#wrapper #about {
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#wrapper #skills {
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #3d3d3d;
+}
+
+#wrapper #certs {
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#wrapper #projects {
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #3d3d3d;
+}
+
+#wrapper #contact {
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    width: 100%;
+}
+
 /* Desktop Theme */
-@media screen and (min-width: 541px) {
+@media screen and (min-width: 501px) {
+    
     header nav #mobile-menu {
         display: none;
     }
 
+    /* Menu */
     header nav #desktop-menu {
         width: 100%;
-        height: 100%;
-        padding: 15px;
+        padding: 10px 0;
         font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        background-color: #3f3f3f;
+        font-size: 23px;
+        background-color: #6e6e6e;
     }
 
     header nav #desktop-menu ul {
         list-style-type: none;
-        height: 100%;
     }
 
     header nav #desktop-menu ul li {
         display: inline-block;
-        height: 100%;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     header nav #desktop-menu ul li a {
         color: white;
-        height: 100%;
         text-decoration: none;
     }
 
-    header nav #desktop-menu ul li a:visited {
-        color: white;
-    }
-
-    /* Main Content */
-    #wrapper {
-        width: 100%;
-    }
-
-    #wrapper #welcome {
-        width: 100%;
-        height: 100vh;
+    /* Cover */
+    #wrapper #cover {
         background-image: url('../../media/desktop/background.svg');
         background-size: cover;
     }
 
-    #wrapper #welcome h1 {
-        padding-top: 20%;
-        padding-left: 20%;
-        font-size: 40px;
-        animation: text-anim 5s;
+    #wrapper #cover div {
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 20%;
     }
 
-    #wrapper #welcome h2 {
-        padding-left: 20%;
-        padding-top: 10px;
-        animation: text-anim 5s;
+    #wrapper #cover div h1 {
+        padding-bottom: 10px;
+        font-size: 40px;
+        color: white;
+    }
+
+    #wrapper #cover div h2 {
+        padding-bottom: 10px;
+        font-size: 30px;
+        color: white;
+    }
+
+    #wrapper #cover div i {
+        font-size: 40px;
+        margin-right: 30px;
+    }
+
+    /* About */
+    #wrapper #about h2 {
+        padding: 10px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #wrapper #about div {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    #wrapper #about div img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    #wrapper #about div p {
+        padding: 10px 0;
+        font-size: 23px;
+    }
+
+    #wrapper #skills h2 {
+        padding: 10px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #wrapper #skills div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #wrapper #skills ul {
+        font-size: 20px;
+        list-style-type: square;
+    }
+
+    #wrapper #skills ul li {
+        margin-left: 10px;
+        padding: 5px 0;
+    }
+
+    #wrapper #certs h2 {
+        padding: 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #wrapper #certs div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #wrapper #certs div .cert-item {
+        display: inline-block;
+        width: 20%;
+        height: 300px;
+        padding: 10px;
+        text-align: center;
+        background-color: #bbbbbb;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    #wrapper #certs div .cert-item img {
+        width: 95%;
+        height: 200px;
+        padding: 10px 0;
+    }
+
+    #wrapper #projects h2 {
+        padding: 10px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #wrapper #projects h3 {
+        padding: 10px 0;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    /* Contact */
+    #wrapper #contact h2 {
+        padding: 10px 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #wrapper #contact p {
+        padding: 10px 0;
+        font-size: 20px;
+        text-align: center;
     }
 }
 
-/* Mobile Theme */
-@media screen and (max-width: 540px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Mobile Theme */
+@media screen and (max-width: 500px) {
+
     header nav #desktop-menu {
         display: none;
     }
 
+    /* Menu */
     header nav #mobile-menu {
         width: 100%;
         font-family: 'Roboto', sans-serif;
-        background-color: #414141;
+        background-color: #6e6e6e;
     }
 
     header nav #mobile-menu button {
         width: 100%;
         padding: 5px 0;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
         color: white;
-        background-color: #414141;
+        background-color: #6e6e6e;
         border: none;
-    }
-
-    header nav #mobile-menu button:focus {
-        outline: none;
+        border-bottom: 1px solid #2e2e2e;
+        outline: 0;
     }
 
     header nav #mobile-menu ul {
         width: 100%;
-        list-style-type: none;
+        padding: 10px 0;
     }
-    
+
+    header nav #mobile-menu ul.hide-menu {
+        display: none;
+    }
+
+    header nav #mobile-menu ul.show-menu {
+        display: block;
+    }
+
     header nav #mobile-menu ul li {
-        padding-bottom: 10px;
-        padding-left: 10px;
+        margin-left: 10px;
+        padding: 3px 0;
+        font-size: 17px;
     }
 
     header nav #mobile-menu ul li a {
-        font-size: 17px;
         color: white;
         text-decoration: none;
     }
@@ -128,38 +318,132 @@ header nav {
         color: white;
     }
 
-    .hide-menu {
-        display: none;
-    }
-
-    .show-menu {
-        display: block;
-        animation: menu-anim 1s, text-anim 5s;
-    }
-
-    /* Main Content */
-    #wrapper {
-        width: 100%;
-    }
-
-    /* Welcome */
-    #wrapper #welcome {
-        width: 100%;
-        height: 100vh;
-        text-align: center;
+    /* Cover */
+    #wrapper #cover {
         background-image: url('../../media/mobile/background.svg');
         background-size: cover;
     }
 
-    #wrapper #welcome h1 {
-        padding-top: 40%;
+    #wrapper #cover div {
+        position: absolute;
+        margin-top: 70%;
+        text-align: center;
+        width: 100%;
+    }
+
+    #wrapper #cover div h1 {
+        padding-bottom: 10px;
         font-size: 30px;
-        animation: text-anim 5s;
+        color: white;
+    }
+
+    #wrapper #cover div h2 {
+        padding-bottom: 20px;
+        font-size: 25px;
+        color: white;
+    }
+
+    #wrapper #cover div a {
+        margin: 0 20px;
+        font-size: 40px;
+    }
+
+    /* About */
+    #wrapper #about h2 {
+        padding: 10px 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #wrapper #about div {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
     }
     
-    #wrapper #welcome h2 {
-        padding-top: 10px;
+    #wrapper #about div img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    #wrapper #about div p {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    /* Skills */
+    #wrapper #skills h2 {
+        padding: 10px 0;
         font-size: 25px;
-        animation: text-anim 5s;
+        text-align: center;
+    }
+
+    #wrapper #skills div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #wrapper #skills ul {
+        list-style-type: square;
+    }
+
+    #wrapper #skills ul li {
+        margin-left: 10px;
+        padding: 5px 0;
+    }
+
+    /* Certifications */
+    #wrapper #certs h2 {
+        padding: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #wrapper #certs div {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #wrapper #certs div .cert-item {
+        width: 80%;
+        height: 300px;
+        padding: 10px;
+        text-align: center;
+        background-color: #bbbbbb;
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px black;
+    }
+
+    #wrapper #certs div .cert-item img {
+        width: 95%;
+        height: 200px;
+        padding: 10px 0;
+    }
+
+    /* Projects */
+    #wrapper #projects h2 {
+        padding: 10px 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #wrapper #projects h3 {
+        padding: 10px 0;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    /* Contact */
+    #wrapper #contact h2 {
+        padding: 10px 0;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #wrapper #contact p {
+        padding: 10px 0;
+        font-size: 20px;
+        text-align: center;
     }
 }

@@ -1,20 +1,26 @@
-const mobileMenu = document.getElementById('mobile-menu');
-const linkList = mobileMenu.children[1].children;
-
+//When menu button is clicked in mobile display - 
+//Show or hide menu
 let showMenu = false;
-mobileMenu.children[0].addEventListener('click', () => {
+$('#mobile-menu button').on('click', e => {
     if(!showMenu) {
-        mobileMenu.children[1].setAttribute('class', 'show-menu');
+        $('#mobile-menu ul').attr('class', 'show-menu');
         showMenu = true;
     } else {
-        mobileMenu.children[1].setAttribute('class', 'hide-menu');
+        $('#mobile-menu ul').attr('class', 'hide-menu');
         showMenu = false;
     }
 });
 
-for(let i = 0; i < linkList.length; i++) {
-    linkList[i].firstChild.addEventListener('click', () => {
-        mobileMenu.children[1].setAttribute('class', 'hide-menu');
+//If one of the links are clicked, hide menu
+$('#mobile-menu ul').children().on('click', e => {
+    $('#mobile-menu ul').attr('class', 'hide-menu');
+    showMenu = false;
+});
+
+//If display has changed to mobile, hide menu
+$(window).resize(() => {
+    if($(window).width() < 501) {
+        $('#mobile-menu ul').attr('class', 'hide-menu');
         showMenu = false;
-    });
-}
+    }
+});
