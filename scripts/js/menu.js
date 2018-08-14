@@ -19,7 +19,7 @@ $('#mobile-menu ul').children().on('click', e => {
 
 //If display has changed to mobile, hide menu
 $(window).resize(() => {
-    if($(window).width() < 501) {
+    if($(window).width() < 622) {
         $('#mobile-menu ul').attr('class', 'hide-menu');
         showMenu = false;
     }

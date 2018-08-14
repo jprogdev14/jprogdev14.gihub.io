@@ -1,3 +1,4 @@
+/* Preset */
 html, body, div, span,
 h1, h2, h3, p, ul, li {
     margin: 0;
@@ -36,15 +37,19 @@ header nav {
     color: #009700;
 }
 
+#wrapper #cover div a:nth-of-type(4) {
+    color: lightgreen;
+}
+
 #wrapper #about {
     width: 100%;
-    padding: 10px 0;
+    padding: 50px 0;
     font-family: 'Raleway', sans-serif;
 }
 
 #wrapper #skills {
     width: 100%;
-    padding: 10px 0;
+    padding: 50px 0;
     font-family: 'Raleway', sans-serif;
     color: white;
     background-color: #3d3d3d;
@@ -52,13 +57,13 @@ header nav {
 
 #wrapper #certs {
     width: 100%;
-    padding: 10px 0;
+    padding: 50px 0;
     font-family: 'Raleway', sans-serif;
 }
 
 #wrapper #projects {
     width: 100%;
-    padding: 10px 0;
+    padding: 50px 0;
     font-family: 'Raleway', sans-serif;
     color: white;
     background-color: #3d3d3d;
@@ -66,16 +71,19 @@ header nav {
 
 #wrapper #contact {
     width: 100%;
-    padding: 10px 0;
+    padding: 50px 0;
     font-family: 'Raleway', sans-serif;
 }
 
 footer {
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #3d3d3d;
 }
 
 /* Desktop Theme */
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 622px) {
     
     header nav #mobile-menu {
         display: none;
@@ -128,14 +136,22 @@ footer {
         color: white;
     }
 
-    #wrapper #cover div i {
+    #wrapper #cover div a i {
         font-size: 40px;
         margin-right: 30px;
     }
 
+    #wrapper #cover div a:nth-of-type(4)  {
+        font-size: 40px;
+        margin-right: 30px;
+        text-decoration: none;
+
+    }
+
     /* About */
     #wrapper #about h2 {
-        padding: 10px 0;
+        padding-top: 10px;
+        padding-bottom: 25px;
         font-size: 30px;
         text-align: center;
     }
@@ -157,8 +173,10 @@ footer {
         font-size: 23px;
     }
 
+    /* Skills */
     #wrapper #skills h2 {
-        padding: 10px 0;
+        padding-top: 10px;
+        padding-bottom: 25px;
         font-size: 30px;
         text-align: center;
     }
@@ -169,17 +187,20 @@ footer {
     }
 
     #wrapper #skills ul {
+        display: inline-block;
         font-size: 20px;
         list-style-type: square;
     }
 
     #wrapper #skills ul li {
-        margin-left: 10px;
-        padding: 5px 0;
+        padding-top: 5px;
+        padding-right: 50px;
     }
 
+    /* Certifications */
     #wrapper #certs h2 {
-        padding: 10px;
+        padding-top: 10px;
+        padding-bottom: 25px;
         font-size: 25px;
         text-align: center;
     }
@@ -206,8 +227,10 @@ footer {
         padding: 10px 0;
     }
 
+    /* Projects */
     #wrapper #projects h2 {
-        padding: 10px 0;
+        padding-top: 10px;
+        padding-bottom: 25px;
         font-size: 30px;
         text-align: center;
     }
@@ -220,7 +243,8 @@ footer {
 
     /* Contact */
     #wrapper #contact h2 {
-        padding: 10px 0;
+        padding-top: 10px;
+        padding-bottom: 25px;
         font-size: 25px;
         text-align: center;
     }
@@ -230,42 +254,26 @@ footer {
         font-size: 20px;
         text-align: center;
     }
+
+    /* Footer */
+    footer {
+        padding: 20px 0;
+    }
+
+    footer p {
+        padding: 3px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    footer p a {
+        color: #0059ff;
+        text-decoration: none;
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  Mobile Theme */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 621px) {
 
     header nav #desktop-menu {
         display: none;
@@ -326,7 +334,7 @@ footer {
 
     #wrapper #cover div {
         position: absolute;
-        margin-top: 70%;
+        top: 40%;
         text-align: center;
         width: 100%;
     }
@@ -344,8 +352,9 @@ footer {
     }
 
     #wrapper #cover div a {
-        margin: 0 20px;
+        margin-right: 20px;
         font-size: 40px;
+        text-decoration: none;
     }
 
     /* About */
@@ -445,5 +454,21 @@ footer {
         padding: 10px 0;
         font-size: 20px;
         text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 0;
+    }
+
+    footer p {
+        padding: 3px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    footer p a {
+        color: #0059ff;
+        text-decoration: none;
     }
 }
