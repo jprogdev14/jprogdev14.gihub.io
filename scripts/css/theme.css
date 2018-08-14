@@ -212,9 +212,11 @@ footer {
 
     #wrapper #certs div .cert-item {
         display: inline-block;
-        width: 20%;
-        height: 300px;
+        width: 25%;
+        height: 400px;
+        margin-right: 20px;
         padding: 10px;
+        vertical-align: top;
         text-align: center;
         background-color: #bbbbbb;
         border-radius: 20px;
@@ -223,7 +225,7 @@ footer {
 
     #wrapper #certs div .cert-item img {
         width: 95%;
-        height: 200px;
+        height: 250px;
         padding: 10px 0;
     }
 
@@ -235,10 +237,35 @@ footer {
         text-align: center;
     }
 
-    #wrapper #projects h3 {
+    #wrapper #projects div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #wrapper #projects div h3 {
         padding: 10px 0;
         font-size: 23px;
-        text-align: center;
+        text-align: left;
+    }
+
+    #wrapper #projects div h3 a {
+        color: white;
+    }
+
+    #wrapper #projects div ul {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 20px;
+        list-style-type: square;
+    }
+
+    #wrapper #projects div ul li {
+        padding-top: 5px;
+        padding-right: 50px;
+    }
+
+    #wrapper #projects div ul li a {
+        color: white;
     }
 
     /* Contact */
@@ -417,6 +444,7 @@ footer {
     #wrapper #certs div .cert-item {
         width: 80%;
         height: 300px;
+        margin-bottom: 20px;
         padding: 10px;
         text-align: center;
         background-color: #bbbbbb;
@@ -431,17 +459,42 @@ footer {
     }
 
     /* Projects */
-    #wrapper #projects h2 {
-        padding: 10px 0;
-        font-size: 25px;
-        text-align: center;
-    }
-
-    #wrapper #projects h3 {
-        padding: 10px 0;
-        font-size: 23px;
-        text-align: center;
-    }
+        /* Projects */
+        #wrapper #projects h2 {
+            padding-top: 10px;
+            padding-bottom: 25px;
+            font-size: 25px;
+            text-align: center;
+        }
+    
+        #wrapper #projects div {
+            width: 80%;
+            margin: 0 auto;
+        }
+    
+        #wrapper #projects div h3 {
+            padding: 10px 0;
+            font-size: 20px;
+            text-align: left;
+        }
+    
+        #wrapper #projects div h3 a {
+            color: white;
+        }
+    
+        #wrapper #projects div ul {
+            font-size: 17px;
+            list-style-type: square;
+        }
+    
+        #wrapper #projects div ul li {
+            padding-top: 5px;
+            padding-right: 50px;
+        }
+    
+        #wrapper #projects div ul li a {
+            color: white;
+        }
 
     /* Contact */
     #wrapper #contact h2 {
