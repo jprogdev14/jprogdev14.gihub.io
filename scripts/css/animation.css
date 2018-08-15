@@ -1,0 +1,20 @@
+/* Menu Display Animation */
+@keyframes show-menu-anim {
+    from {
+        height: 0px;
+    } 
+    to {
+        height: 157px;
+    }
+}
+
+@keyframes show-links-anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
+

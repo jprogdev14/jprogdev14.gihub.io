@@ -1,3 +1,5 @@
+/*--- Mobile Menu Display ---*/
+
 //When menu button is clicked in mobile display - 
 //Show or hide menu
 let showMenu = false;
@@ -24,3 +26,23 @@ $(window).resize(() => {
         showMenu = false;
     }
 });
+
+/*--- Mobile Menu Animation ---*/
+const desktopMenu = $('#desktop-menu ul').children();
+const mobileMenu = $('#mobile-menu ul').children();
+
+for(let i = 0; i < desktopMenu.length; i++) {
+    let loc = desktopMenu[i].children[0].getAttribute('href');
+
+    $(desktopMenu[i]).on('click', e => {
+        $('html, body').animate({
+            scrollTop: $(loc).offset().top
+        }, 1000);
+    });
+
+    $(mobileMenu[i]).on('click', e => {
+        $('html, body').animate({
+            scrollTop: $(loc).offset().top
+        }, 1000);
+    });
+}

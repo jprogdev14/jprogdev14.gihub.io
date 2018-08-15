@@ -211,21 +211,16 @@ footer {
     }
 
     #wrapper #certs div .cert-item {
-        display: inline-block;
-        width: 25%;
-        height: 400px;
-        margin-right: 20px;
+        width: 50%;
+        margin: 0 auto;
         padding: 10px;
         vertical-align: top;
         text-align: center;
-        background-color: #bbbbbb;
-        border-radius: 20px;
-        box-shadow: 5px 5px 20px black;
     }
 
     #wrapper #certs div .cert-item img {
-        width: 95%;
-        height: 250px;
+        width: 80%;
+        height: 100%;
         padding: 10px 0;
     }
 
@@ -336,6 +331,7 @@ footer {
 
     header nav #mobile-menu ul.show-menu {
         display: block;
+        animation: show-menu-anim 1s, show-links-anim 5s;
     }
 
     header nav #mobile-menu ul li {
@@ -443,18 +439,14 @@ footer {
 
     #wrapper #certs div .cert-item {
         width: 80%;
-        height: 300px;
         margin-bottom: 20px;
         padding: 10px;
         text-align: center;
-        background-color: #bbbbbb;
-        border-radius: 20px;
-        box-shadow: 5px 5px 20px black;
     }
 
     #wrapper #certs div .cert-item img {
         width: 95%;
-        height: 200px;
+        height: 100%;
         padding: 10px 0;
     }
 
