@@ -98,7 +98,7 @@ footer {
         width: 100%;
         padding: 10px 0;
         font-family: 'Roboto', sans-serif;
-        font-size: 23px;
+        font-size: 17px;
         background-color: #6e6e6e;
     }
 
@@ -108,7 +108,7 @@ footer {
 
     header nav #desktop-menu ul li {
         display: inline-block;
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     header nav #desktop-menu ul li a {
